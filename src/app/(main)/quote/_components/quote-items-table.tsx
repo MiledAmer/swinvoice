@@ -91,7 +91,7 @@ export function QuoteItemsTable({ items, setItems }: QuoteItemsTableProps) {
     <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
       <DialogTrigger asChild>
         <Button
-          // @ts-ignore
+          // @ts-expect-error
           variant={variant ? variant : "outline"}
         >
           Add Item
