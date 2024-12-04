@@ -23,9 +23,9 @@ export default async function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const session = await auth();
-  if (!session?.user) {
-    redirect("/auth/sign-in");
-  }
+  // if (!session?.user) {
+  //   redirect("/auth/sign-in");
+  // }
   return (
     <main>
       <SidebarProvider>

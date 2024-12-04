@@ -30,7 +30,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         email: {},
         password: {},
       },
-      // @ts-ignore
+      // @ts-expect-error
       authorize: async (credentials) => {
         try {
           let user = null;
